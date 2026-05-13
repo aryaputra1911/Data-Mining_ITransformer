@@ -418,6 +418,6 @@ python train_pipeline.py --skip-analysis
 
 <div align="center">
 
-<sub>Dibangun dengan ❤️ menggunakan PyTorch · Didukung oleh arsitektur iTransformer (Liu et al., ICLR 2024)</sub>
+<sub> Didukung oleh arsitektur iTransformer (Liu et al., ICLR 2024)</sub>
 
 </div>

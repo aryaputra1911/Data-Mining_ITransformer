@@ -404,10 +404,7 @@ python train_pipeline.py --skip-analysis
 
 <div align="center">
 
-**Arya** · *AI Researcher & Data Scientist*
-
-Mahasiswa Indonesia yang berfokus pada penerapan deep learning
-untuk permasalahan sosial-ekonomi dan ketahanan pangan.
+**Muhammad Arya Putra Handrian** · *Computer Engineering Student*
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/username)
 

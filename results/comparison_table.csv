@@ -1,0 +1,5 @@
+Model,MAE (lr),RMSE (lr),Price MAE (Rp),Price sMAPE,F1 (macro),Precision,Recall,AUPRC,AUC-ROC,Threshold
+LSTM,0.4517,1.6686,"1,788",4.45%,0.0308,0.0189,0.2473,0.0489,nan,0.31
+PatchTST,0.4556,1.6681,"1,835",4.56%,0.0462,0.0240,0.8052,0.0397,nan,0.16
+Crossformer,0.4636,1.6629,"1,803",4.51%,0.0422,0.0227,0.5161,0.0331,nan,0.27
+iTransformer,0.4772,1.6750,"1,833",4.58%,0.0657,0.0550,0.2006,0.0838,nan,0.30

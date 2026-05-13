@@ -1,0 +1,48 @@
+[2026-05-12 14:20:20] Preprocessing pipeline started.
+[2026-05-12 14:20:20] STEP 1 - Loading raw CSV files.
+[2026-05-12 14:20:20] Merged shape: (1826, 33)
+[2026-05-12 14:20:20] STEP 2 - Applying hard void masks.
+[2026-05-12 14:20:20] Applied void mask 'sulsel_consumer_2024' to 3 columns, range 2024-01-02..2024-12-31.
+[2026-05-12 14:20:20] Applied void mask 'jatim_producer_2022' to 3 columns, range 2022-01-01..2022-12-31.
+[2026-05-12 14:20:20] Applied void mask 'jatim_producer_2024' to 3 columns, range 2024-01-02..2024-12-31.
+[2026-05-12 14:20:20] Saved valid_mask.csv and void_mask.csv.
+[2026-05-12 14:20:20] STEP 3 - Missing value handling by type (A/B/C).
+[2026-05-12 14:20:20] Missing handling complete with no non-void NaN.
+[2026-05-12 14:20:20] STEP 4.1 - IQR winsorization by year.
+[2026-05-12 14:20:21] Winsorized points: 1658
+[2026-05-12 14:20:21] Saved winsorized_log.csv.
+[2026-05-12 14:20:21] STEP 4.2 - Isolation Forest multivariate flags on training period.
+[2026-05-12 14:20:21] IsolationForest row outliers: 1077
+[2026-05-12 14:20:21] STEP 4.3 - Rolling Z-score features.
+[2026-05-12 14:20:21] STEP 5 - Computing spread features.
+[2026-05-12 14:20:21] Negative spread found in spread_beras_jabar: 2; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_beras_jateng: 3; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_beras_sumut: 32; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_bawang_jabar: 37; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_bawang_sulsel: 24; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_bawang_sumut: 6; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_cabai_jabar: 1; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_cabai_jateng: 76; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_cabai_sulsel: 59; set NaN then interpolate.
+[2026-05-12 14:20:21] Negative spread found in spread_cabai_sumut: 157; set NaN then interpolate.
+[2026-05-12 14:20:21] Saved df_level_full.csv.
+[2026-05-12 14:20:21] STEP 6 - Computing log returns.
+[2026-05-12 14:20:21] STEP 7 - Feature engineering.
+[2026-05-12 14:20:22] Event flags added (Ramadan/Lebaran via fixed date ranges).
+[2026-05-12 14:20:22] STEP 8 - Generating spike labels.
+[2026-05-12 14:20:22] Saved spike_label_report.csv.
+[2026-05-12 14:20:22] STEP 10 - Building adjacency matrix 6x6.
+[2026-05-12 14:20:22] Saved adjacency_matrix_6x6.csv.
+[2026-05-12 14:20:22] STEP 11 - Applying temporal split.
+[2026-05-12 14:20:22] STEP 11 - Applying temporal split.
+[2026-05-12 14:20:22] STEP 11 - Applying temporal split.
+[2026-05-12 14:20:22] STEP 9 - Normalization with train-only fit.
+[2026-05-12 14:20:28] Saved scalers.pkl.
+[2026-05-12 14:20:31] Saved train/val/test feature and label CSV files.
+[2026-05-12 14:20:31] FoodPriceDataset sanity initialization passed.
+[2026-05-12 14:20:31] STEP 14 - Running validation checklist.
+[2026-05-12 14:20:32] Warning: spike_bawang_sulsel_prod spike prevalence out of target [2,20]: 1.48%
+[2026-05-12 14:20:32] Warning: spike_beras_sulsel_prod spike prevalence out of target [2,20]: 1.15%
+[2026-05-12 14:20:32] Warning: spike_beras_sumut_prod spike prevalence out of target [2,20]: 1.92%
+[2026-05-12 14:20:32] Validation passed ✅
+[2026-05-12 14:20:32] Preprocessing pipeline finished successfully.
